@@ -11,6 +11,10 @@ body {
 	font-family: "Source Serif Pro", serif;
 }
 
+.wrapper-semua {
+	style="overflow-x: hidden;"
+}
+
 /* Global Image Setting */
 img {
 	width: 100%;
@@ -259,16 +263,22 @@ footer {
 
 .footer-column {
 	padding: 20px;
-	flex: 1;
+	flex: 4;
 }
 
-.footer-column:nth-child(1) {flex: 2;}
+.footer-column:nth-child(1) {flex: 1;}
 
-.footer-logo {
-	max-width: 320px;
+img.footer-logo {
+	max-width: 120px;
 }
 
-@media screen and (min-width: 768px) {
+.footer-row {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-gap: 20px;
+}
+
+@media screen and (min-width: 576px) {
 	.footer-container{
 		display: flex;
 		justify-content: space-between;
@@ -285,6 +295,24 @@ footer p {
 	font-size: 1rem;
 }
 
+/* Footer Social Media */
+.social-media {
+	float: right;
+	margin: 0 0 20px 0;
+}
+
+.social-media i {
+	font-size: 30px;
+	padding: 10px;
+	margin: 0 5px;
+}
+
+@media screen and (max-width: 576px) {
+	.social-media {
+		float: none;
+	}
+}
+
 /* Footer Navigation Menus */
 footer .site-nav {
 	margin: 0;
@@ -295,6 +323,11 @@ footer a {
 	color: #FFF;
 }
 
+/* Copyright */
+.copyright {
+	margin: 20px 0;
+}
+
 /* Footer Container Last */
 .footer-container-last {
 	max-width: 960px;
@@ -302,3 +335,14 @@ footer a {
 	padding: 0 20px;
 	font-family: "Lato", sans-serif;
 }
+
+/* Other Rules */
+
+/* Clearfix */
+.clearfix:before, .clearfix:after {
+	content: "";
+	display: table;
+}
+
+.clearfix:after { clear: both; }
+.clearfix {*zoom: 1;}
