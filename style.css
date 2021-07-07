@@ -7,13 +7,17 @@ body {
 	margin: 0;
 	padding: 0;
 	color: #2c4a61ff;
-	overflow-x: hidden;
+	/*overflow-x: hidden;*/
 	font-family: "Source Serif Pro", serif;
 }
 
-.wrapper-semua {
-	overflow-x: hidden;
-	position: relative;
+/* Overflow-x hidden saat tablet/mobile
+Untuk navbar dari kanan */
+@media screen and (max-width: 768px){
+	.wrapper-semua {
+		overflow-x: hidden;
+		position: relative;
+	}
 }
 
 /* Global Image Setting */
