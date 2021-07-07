@@ -12,7 +12,8 @@ body {
 }
 
 .wrapper-semua {
-	style="overflow-x: hidden;"
+	overflow-x: hidden;
+	position: relative;
 }
 
 /* Global Image Setting */
