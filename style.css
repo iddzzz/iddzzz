@@ -90,13 +90,13 @@ header {
 
 /* Header Logo */
 .header-logo {
-	height: 80px;
+	/*height: 80px;*/
 }
 
 .header-logo img {
 	height: 80px;
 	width: auto;
-	margin: auto;
+	margin: 0;
 }
 
 /* Header Navigation Menus */
@@ -274,7 +274,7 @@ footer {
 .footer-column:nth-child(1) {flex: 1;}
 
 img.footer-logo {
-	max-width: 120px;
+	max-width: 78px;
 }
 
 .footer-row {
@@ -330,7 +330,7 @@ footer a {
 
 /* Copyright */
 .copyright {
-	margin: 20px 0;
+	margin: 20px 0 0 0;
 }
 
 /* Footer Container Last */
